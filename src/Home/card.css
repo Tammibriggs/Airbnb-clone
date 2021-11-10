@@ -2,9 +2,11 @@
   margin: 10px;
   border-radius: 10px;
   overflow: hidden;
+  flex-basis: 30%;
+  min-width: 200px;
+  flex-grow: 1;
   box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
   transition: transform 100ms ease-in;
-  cursor: pointer;
 }
 
 .card:hover {
@@ -13,7 +15,6 @@
 
 .card > img {
   object-fit: fill;
-  min-width: 300px;
   min-height: 200px;
   width: 100%;
 }
