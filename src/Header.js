@@ -1,28 +1,31 @@
 import { Search, Language, ExpandMore } from '@mui/icons-material'
 import './header.css'
 import { Avatar } from '@mui/material'
+import {Link} from 'react-router-dom'
 
 function Header() {
   return (
     <div className='header'>
-      <img 
-        src='https://i.pinimg.com/originals/3c/bf/be/3cbfbe148597341fa56f2f87ade90956.png'
-        alt='airbnb'
-        className='header__icon'
-      />
-      <div className='header__center'>
-        <input 
-          type='text'
+      <Link to='/'>
+        <img
+            className="header__icon"
+            src="https://i.pinimg.com/originals/3c/bf/be/3cbfbe148597341fa56f2f87ade90956.png"
+            alt=""
         />
-        <Search />
+      </Link>
+      
+      <div className='header__center'>
+          <input type="text" />
+          <Search />
       </div>
+
       <div className='header__right'>
-        <p>Become a host</p>
-        <Language />
-        <ExpandMore />
-        <Avatar />
+          <p>Become a host</p>
+          <Language />
+          <ExpandMore />
+          <Avatar />
       </div>
-    </div>
+  </div>
   )
 }
 

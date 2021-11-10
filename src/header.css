@@ -1,4 +1,4 @@
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,31 +9,30 @@
   width: 100%;
 }
 
-.header__icon{
+.header__icon {
   object-fit: contain;
   height: 100px;
   margin-left: 20px;
 }
 
-.header__center{
+.header__center {
   display: flex;
+  flex: 1;
   align-items: center;
   max-width: fit-content;
   padding: 10px;
   height: 30px;
-  flex: 1; 
-  border-radius: 999px;
   border: 1px solid lightgray;
+  border-radius: 999px;
 }
 
 .header__center > input {
   border: none;
-  outline: none;
   padding: 10px;
   outline-width: 0;
 }
 
-.header__right{
+.header__right {
   display: flex;
   align-items: center;
   justify-content: space-between;
